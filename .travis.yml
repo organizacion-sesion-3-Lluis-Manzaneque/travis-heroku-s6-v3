@@ -4,8 +4,4 @@ php:
 services:
 - mysql
 before_script: 
-script: echo "none"
-deploy:
-  provider: heroku
-  app: github-cefire-lluismj
-
+script: compose test
